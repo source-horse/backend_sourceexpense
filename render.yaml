@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: budget-tracker-api
+    env: node
+    buildCommand: npm install
+    startCommand: node server/server.js
+    envVars:
+      - key: MONGODB_URI
+        value: mongodb+srv://prajwalpc2005:rUb4guQq0PwXb8aT@sourcetrack.wyfqcjy.mongodb.net/budget-tracker?retryWrites=true&w=majority
+      - key: NODE_ENV
+        value: production 
